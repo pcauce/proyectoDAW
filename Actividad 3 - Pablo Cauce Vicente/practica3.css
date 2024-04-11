@@ -1,0 +1,51 @@
+body {
+    padding: 0;
+    margin: 0;
+    margin: 0 12.5vw;
+    margin-top: 5vh;
+}
+
+img{
+    margin: 0;
+}
+
+.wrapperGeneral {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.wrapperImagen {
+    box-sizing: border-box;
+    aspect-ratio: 1/1;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 800px) {
+    body {
+        margin: 0 5vw;
+    }
+
+    .wrapperGeneral {
+        display: block;
+        gap: 0px;
+    }
+
+    .wrapperImagen {
+        box-sizing: border-box;
+        aspect-ratio: 1/1;
+        width: 100%;
+        margin: -4px;
+    }
+}

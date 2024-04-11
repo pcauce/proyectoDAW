@@ -1,0 +1,51 @@
+body {
+    padding: 0;
+    margin: 0;
+    margin: 0 12.5vw;
+    margin-top: 5vh;
+}
+
+img {
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+}
+
+img:hover{
+    filter: brightness(70%);
+}
+
+.slider {
+    overflow: hidden;
+    height: 50vh;
+    width: 100%;
+}
+
+/* ---------- ANIMACION --------------*/
+
+@keyframes animacion {
+    0% { left: 0; }
+    10% { left: 0; }
+    20% { left: -100%; }
+    30% { left: -100%; }
+    40% { left: -200%; }
+    50% { left: -200%; }
+    60% { left: -300%; }
+    70% { left: -300%; }
+    80% { left: -400%; }
+    90% { left: -400%; }
+    100% { left: -500%; }
+}
+
+.imagenes {
+    width: 600%;
+    height: 50vh;
+    position: relative;
+    animation: animacion 15s linear infinite;
+}
+
+.slide {
+    height: 50vh;
+    width: 16.666%;
+    position: relative;
+    float: left;
+}
