@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+</head>
+
+<body>
+
+    <h2>CÁLCULO DE CALORÍAS DIARIAS</h2>
+
+    <form action="calorias.php" method="post">
+
+        <label for="peso">Introduce tu peso:</label><br>
+        <input type="number" id="peso" name="peso"><br>
+        
+        <br>
+
+        <label for="actividad">Selecciona tu actividad física diaria:</label><br>
+        <select id="actividad" name="actividad">
+            <option value="actividad1">Sedentario</option>
+            <option value="actividad2">Moderado / Activo</option>
+            <option value="actividad3">Muy activo</option>
+        </select><br>
+
+        <br>
+
+        <label for="objetivo">Selecciona tu objetivo:</label><br>
+        <select id="objetivo" name="objetivo">
+            <option value="objetivo1">Rebajar</option>
+            <option value="objetivo2">Mantener</option>
+            <option value="objetivo3">Aumentar</option>
+        </select><br>
+
+        <br>
+
+        <label for="biotipo">Selecciona tu biotipo:</label><br>
+        <select id="biotipo" name="biotipo">
+            <option value="biotipo1">Ectomorfo</option>
+            <option value="biotipo2">Mesomorfo</option>
+            <option value="biotipo3">Endomorfo</option>
+        </select><br>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
