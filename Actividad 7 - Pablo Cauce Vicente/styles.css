@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    margin-top: 5vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, .campo{
+    margin-bottom: 15px;
+}
+
+.wrapperFormulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 30px;
+}

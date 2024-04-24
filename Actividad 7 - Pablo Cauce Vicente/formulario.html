@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario HTML</title>
+</head>
+
+<body>
+    <div class="wrapperFormulario">
+        <h2>Formulario de Registro</h2>
+
+        <form id="formulario" action="formulario.php" method="post">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,12}"
+                    title="El nombre debe tener entre 3 y 12 caracteres y no debe contener números." required>
+            </div>
+            <div class="campo">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{4,20}"
+                    title="El apellido debe tener entre 4 y 20 caracteres y no debe contener números." required>
+            </div>
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                    title="Por favor, introduce una dirección de correo electrónico válida." required>
+            </div>
+            <div class="campo">
+                <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" min="1920-01-01" max="2006-12-31"
+                    title="La fecha de nacimiento debe estar entre 1920 y 2006." required>
+            </div>
+            <div class="campo">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" pattern="(?=.*\d)(?=.*[a-zA-Z])(?=.*\W).{8,12}"
+                    title="La contraseña debe tener entre 8 y 12 caracteres, al menos un número, una letra y un carácter especial."
+                    required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
