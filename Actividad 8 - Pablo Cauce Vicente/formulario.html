@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario HTML</title>
+</head>
+
+<body>
+    <div class="wrapperFormulario">
+        <h2>Extraer Info de la BD</h2>
+
+        <form id="formulario" action="formulario.php" method="post">
+            <div class="campo">
+                <label for="nombre">Inserta el nombre del usuario:</label> <br>
+                <input type="text" id="nombre" name="nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,12}"
+                    title="El nombre debe tener entre 3 y 12 caracteres y no debe contener números." required>
+            </div>
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+</body>
+
+</html>
